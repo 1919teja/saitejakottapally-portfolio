@@ -1,13 +1,15 @@
-
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/', // Change this to '/your-repo-name/' if not using a custom domain
+  // Use relative base path so it works on username.github.io/repo-name/ 
+  // without needing to know the specific repo name.
+  base: './', 
   build: {
     outDir: 'dist',
-    sourcemap: true
+    sourcemap: true,
+    emptyOutDir: true
   }
 });
