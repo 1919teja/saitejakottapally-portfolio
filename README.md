@@ -1,5 +1,5 @@
 
-# Saiteja's Terminal Portfolio
+# Saiteja's  Portfolio
 
 A high-performance, SRE-themed portfolio built with React + Vite + Tailwind CSS.
 
